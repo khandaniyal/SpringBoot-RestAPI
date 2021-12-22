@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="yuto:war">
+    <output-path>$PROJECT_DIR$/yuto/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>yuto</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="yuto-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="yuto:war exploded" />
+    </root>
+  </artifact>
+</component>
