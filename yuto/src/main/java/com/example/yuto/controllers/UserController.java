@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/user")
-public class UseController {
+public class UserController {
 
     @Autowired
     UserService userService;
@@ -25,6 +25,7 @@ public class UseController {
         return this.userService.getById(id);
     }
 
+    //revisit this mapping and method, it doesnt return the user by priority
     @GetMapping("/query")
     public ArrayList<User> getUserByPriority(@RequestParam("priority") int priority){
         return this.userService.getByPriority(priority);
